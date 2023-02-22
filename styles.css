@@ -14,14 +14,21 @@ body{
     justify-content: center;
 }
 .game_container{
+    position: relative;
     height: 400px;
     width: 400px;
     background-color: black;
     display: grid;
     grid-template-columns: repeat(40,1fr);
+    grid-template-rows: repeat(40,1fr);
 }
 
 .pixel_div{
     background-color: grey;
     border: 1px solid white;
+}
+
+.snakeBodyPixel{
+    background-color: yellow;
+    z-index: 999;
 }
